@@ -1,0 +1,13 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    color: white;
+}
+
+footer,.maclaren-grid,.mclaren-section,.section-two,.Mclaren-Models,.fourth-section,.collobration,.fifth-section,.mclaren-765,.buy{
+    overflow: hidden;
+}

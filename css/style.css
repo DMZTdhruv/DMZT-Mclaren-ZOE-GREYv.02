@@ -1,0 +1,1028 @@
+.mclaren-nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.27);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: rgb(13, 13, 13); */
+    background-color: black;
+}
+
+.section-two{
+    background-color: rgb(13,13,13);
+}
+.main-nav img{
+    width: 130px;
+    margin: 1rem;
+}
+
+
+
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    /* backdrop-filter: blur(10px); */
+}
+
+.main-nav ul li{
+    padding: 0.3rem;
+    position: relative; 
+}
+
+
+
+.main-nav ul li:after{
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: aqua;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10%;
+    transition: 0.2s all ease;
+    box-shadow: 0 0 0.5rem aqua;
+}
+
+.main-nav ul li:hover::after{
+    width: 100%;
+}
+
+.main-nav ul li a{ 
+    color: white;
+    opacity: 50%;
+    transition: 0.2s all ease;
+    font-size: 0.8rem;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.mobile-nav span{
+    transform: rotate(90deg);
+}
+
+
+.active[on-color="aqua"]{
+    color: aqua;
+    text-shadow: 0 0 1rem aqua;
+    opacity: 100%;
+    box-shadow: inset 0 0 0.2rem aqua,0 0 0.2rem aqua;
+}
+
+.navigation[data-visible="true"]{
+    transform: translateX(0%);
+}
+
+@media (max-width:800px) {
+    .main-nav ul{
+        position: fixed;
+        inset: 0 0 0 30%;
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(1.5rem);
+        padding-top: 30%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.893);
+        font-size: 2rem;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: 0.2s all ease;
+    }
+    .mobile-nav{
+        position: absolute;
+        top: 1px;
+        right: 5rem;
+        z-index: 9999;
+        border: 0px solid white;
+        padding: 1rem;
+        background-color: transparent;
+        transform: rotate(deg);
+        display: block;
+        transform: translateX(100%);
+    }
+}
+.main-nav ul li:hover a{
+    opacity: 100%;
+}
+
+.mobile-nav span{
+    border: 1px solid white;
+    padding: 0.1rem 1rem;
+    opacity: 50%;
+    border-radius: 10%;
+    padding-bottom: 0.3rem;
+    transition: 0.2s all ease;
+    text-shadow: 0 0 0rem aqua;
+}
+
+.logo-grid{
+    margin-left: 2rem;
+}
+.mclaren-nav-bar .nav-btn{
+    margin-right: 1.5rem;
+    padding: 0.1rem 1.2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    opacity: 50%;
+    transition: 0.2s all ease;
+}
+@media (max-width:800px) {
+    .mclaren-nav-bar .nav-btn{
+        margin-right: 5rem;
+    }
+}
+.mclaren-nav-bar .nav-btn:hover{
+    opacity: 100%;
+}
+
+.mclaren-section-one{
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.534),rgba(255, 255, 255, 0)),
+    url("../images/image2.jpg");
+    min-height: 650px;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.mclaren-section-one .section-one-content{
+    bottom: 20%;
+    left: 2%;
+    margin-left: 1rem;
+    font-weight: 100;
+    position: absolute;
+}   
+
+@media (min-width : 1000px){
+    .mclaren-section-one .section-one-content{
+        bottom: 20%;
+        left: 2%;
+        margin-left: 5rem;
+        font-weight: 100;
+        position: absolute;
+    }   
+}
+
+.section-one-content{
+    margin-top: 1rem;
+}
+
+.section-one-content .span{
+    font-size: 3rem;
+}
+
+.section-one-content .span:after{
+    content: "ARTURA";
+    font-size: 3rem;
+}
+
+@media (min-width : 1000px){
+    .section-one-content .span:after{
+        content: "ARTURA";
+        font-size: 3rem;
+        display: block;
+    }
+}
+.section-one-button button{
+    margin-top: 0.3rem;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.2rem 1.5rem;
+    font-size: 1rem;
+    opacity: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.section-one-button button{
+    display: block;
+    transition: 1s all ease;
+}
+
+.section-one-button .btn-section-one-one{
+    opacity: 50%;
+    transition: 0.2s all ease;
+}
+
+.section-one-button .btn-section-one-one:hover{
+    opacity: 100%;
+}
+
+
+.section-one-button .btn-section-one-two{
+    transition: 0.2s all ease;
+    opacity: 50%;
+}
+
+.section-one-button .btn-section-one-two:hover{
+    opacity: 100%;
+}
+
+@media (min-width : 1000px){
+    .section-one-button button{
+        display: inline-block;
+    }
+}
+.mclaren-section{
+    overflow: hidden;
+}
+
+.section-two{
+    text-align: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.section-two-heading{
+    font-size: 2.3rem;
+    font-weight: lighter;
+    position: relative;
+}
+
+.section-two-heading::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    bottom: -3px;
+    transform: translateX(-50%);
+    left: 50%;
+    transition: 0.2s all ease;
+}
+
+.section-two:hover .section-two-heading::after{
+    width: 50%;
+}
+
+.section-two p{
+    margin: 1rem;
+    padding: 0.8rem;
+    background-color: rgba(0, 128, 0, 0.09);
+    border-radius: 10px;
+    box-shadow: 4 4 0.2rem rgb(0, 255, 0);
+}
+
+.section-two video{
+    width: 90vw;
+}
+
+.section-two hr{
+    opacity: 0%;
+    margin: 1rem 25rem;
+    transition: 0.2s all ease;
+}
+
+.section-two:hover hr{
+    opacity: 100%;
+    margin: 1rem 1rem;
+}
+
+.section-two button{
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: 100;
+    padding: 0.2rem 2rem;
+    opacity: 50%;
+    transition: 0.2s all ease;
+}
+
+.section-two button:hover{
+    opacity: 100%;
+}
+
+.Mclaren-Models{
+    overflow: hidden;
+}
+
+.virtual-reality{
+    position: relative;
+}
+
+.virtual-reality img{
+    width: 100vw;
+}
+
+.virtual-reality .virtual-reality-header{
+    position: absolute;
+    top: 5%;
+    margin-left: 1rem;
+    border-left: 15px solid aqua;
+    padding-left: 1rem;
+}
+
+.virtual-reality-header p{
+    font-size: 0.7rem;
+    transition: 0.2s all ease;
+}
+
+
+.virtual-reality:hover .virtual-reality-header p{
+    font-size: 0.6rem;
+}
+
+.virtual-reality img{
+    overflow: hidden;
+    transform: scale(110%);
+    opacity: 100%;
+    transition: 0.2s all ease;
+}
+
+.virtual-reality:hover img{
+    transform: scale(120%);
+    opacity: 80%;
+}
+
+.virtual-reality h1{
+    font-size: 1.3rem;
+}
+
+.virtual-reality h1 span{
+    transition: 0.2s all ease;
+    text-shadow: 0 0 0.0rem orangered;
+}
+.virtual-reality:hover h1 span{
+    color: orangered;
+    text-shadow: 0 0 0.5rem orangered;
+}
+
+.virtual-reality .virtual-reality-footer{
+    position: absolute;
+    bottom: 5%;
+    padding: 1rem;
+    transition: 0.2s all ease;
+}
+
+.virtual-reality-footer .footer-header{
+    border-bottom: 1px solid aqua;
+    display: inline-block;
+    transform: translateY(500%);
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    transition: 0.2s all ease;
+}
+
+@media (max-width: 700px){  
+    .virtual-reality-footer .footer-header{
+        border-bottom: 1px solid aqua;
+        display: inline-block;
+        transform: translateY(500%);
+        margin-bottom: 0.5rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        transition: 0.2s all ease;
+
+    }
+}
+
+@media (max-width: 500px){
+    .virtual-reality-footer .footer-header {
+        border-bottom: 1px solid aqua;
+        display: inline-block;
+        transform: translateY(650%);
+        margin-bottom: 0.5rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        transition: 0.2s all ease;
+    }
+}
+
+
+@media (max-width: 600px){
+    .virtual-reality-footer .footer-header {
+        border-bottom: 1px solid aqua;
+        display: inline-block;
+        transform: translateY(500%);
+        margin-bottom: 0.5rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        transition: 0.2s all ease;
+    }
+}
+
+@media (max-width: 475px){
+    .virtual-reality-footer .footer-header {
+        border-bottom: 1px solid aqua;
+        display: inline-block;
+        transform: translateY(550%);
+        margin-bottom: 0.5rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        transition: 0.2s all ease;
+    }
+}
+.virtual-reality:hover .footer-header{
+    transform: translateY(0%);
+
+}
+
+.virtual-reality .footer-footer{
+    font-size: 0.7rem;
+    opacity: 0%;
+    transition: 0.4s all ease;
+}
+
+.virtual-reality:hover .footer-footer{
+    opacity: 100%;
+}
+
+
+.models-grid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+
+@media (max-width: 600px){
+    .models-grid{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.models:hover img{
+    opacity: 70%;
+}
+
+.first-car img{
+    transform: scale(100%);
+    display: block;
+    width: 100%;
+}
+
+.first-car{
+    overflow: hidden;
+}
+.first-car:hover img{
+    transform: scale(110%);
+}
+.first-car,.second-car{
+    position: relative;
+}
+
+.second-car img{
+    transform: scale(110%);
+    width: 100%;
+    display: block;
+}
+
+.car-container-1{
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+.car-container-2{
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+
+.car-container-1 h1,.car-container-2 h1{
+    font-size: 0.8rem;
+}
+
+.car-container-1 h1{
+    transform: translateY(310%);
+    border-left: 10px solid aqua;
+    transition: 0.2s all ease;
+    display: inline-block;
+    padding-left: 0.5rem;
+    /* border-bottom: 2px solid aqua; */
+}
+
+.car-container-2 h1{
+    display: inline-block;
+    border-left: 10px solid aqua;
+    padding-left: 0.5rem;
+    transform: translateY(310%);
+    transition: 0.2s all ease;
+}
+
+.first-car:hover h1{
+    transform: translateY(0%);
+}
+
+.second-car:hover h1{
+    transform: translateY(0%);
+}
+
+
+.first-car p{
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    opacity: 0%;
+    transition: 0.2s all ease;
+}
+
+.first-car:hover p{
+    opacity: 100%;
+}
+
+.first-car:hover img{
+    opacity: 60%;
+}
+
+.first-car:hover h1 span,.second-car:hover h1 span{
+    text-shadow: 0 0 1rem aqua;
+}
+.first-car h1 span,.second-car h1 span{
+    text-shadow: 0 0 0rem aqua;
+    transition: 0.2s all ease;
+}
+
+.second-car:hover img{
+    transform: scale(120%);
+    opacity: 60%;
+}
+.second-car p{
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    opacity: 0%;
+    transition: 0.2s all ease;
+}
+
+.fourth-section{
+    overflow: hidden;
+}
+.second-car{
+    overflow: hidden;
+}
+
+.second-car:hover p{
+    opacity: 100%;
+}
+
+.second-car img{
+    opacity: 85%;
+    transition: 0.3s all ease;
+}
+
+.first-car img{
+    opacity: 85%;
+    transition: 0.3s all ease;
+}
+
+.fifth-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0))
+    ,url("../images/image1.jpg");
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 100%;
+    background-repeat: no-repeat;
+    transition: 0.2s all ease;
+}
+
+.fifth-section:hover{
+    opacity: 90%;
+}
+
+.fifth-section .forza{
+    position: absolute;
+    bottom: 0px;
+    padding: 1rem;
+    padding-left: 1rem;
+}
+
+.forza h1{
+    text-transform: uppercase;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    opacity: 80%;
+}
+
+.forza h1 span{
+    transition: 0.2s all ease;
+
+    color: orangered;
+}
+
+.forza p{
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.forza button{
+    margin: 1rem 0rem;
+    background-color: transparent;
+    color: white;
+    padding: 0.2rem 1.5rem;
+    border: 1px solid white;
+    opacity: 70%;
+    transition: 0.2s all ease;
+    backdrop-filter: blur(10px);
+}
+
+.forza button:hover{
+    opacity: 100%;
+}
+
+.forza h1 span{ 
+    text-shadow: 0 0 1rem orangered;
+}
+
+.collobration{
+    text-align: center;
+    background-image: 
+    linear-gradient(
+        270deg,
+        rgb(0, 0, 0),
+        rgb(98, 28, 0),
+        rgb(0, 0, 0)
+    )
+    ;
+    background-size: 300% 300%;
+    animation: color 0.2s ease-in-out infinite;
+    padding: 2rem;
+    background-size: 100%;
+    background-position: left;
+    font-weight: 100;
+    font-size: 0.7rem;
+    width: 100%;
+    height: inherit;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.collobration img{
+    width: 125px;
+    opacity: 90%;
+}
+
+.buy{
+    background-image: linear-gradient(
+        90deg,
+        rgb(36, 36, 36),
+        rgb(0, 0, 0)
+    )
+    ;
+    font-weight: 100;
+}
+
+.buy .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    place-content: center;
+    text-align: center;
+    padding: 3rem;
+    min-height: 300px;
+}
+.enquire{
+    font-size: 2rem;
+    font-weight: 50;
+    opacity: 80%;
+    text-shadow: 0 0 0rem white;
+    transition: 0.2s all ease;
+}
+
+.buy:hover .enquire{
+    opacity: 100%;
+}
+.buy-info{
+    text-align: left;
+    padding-left: 2rem;
+    border-left: 1px solid white;
+}
+
+.buy-info button{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-top: 1rem;
+    padding: 0.3rem 3rem;
+    opacity: 50%;
+    transition: 0.2s all ease;
+}
+
+.buy-info button:hover{
+    opacity: 100%;
+}
+
+.mclaren-765{
+    text-align: center;
+    background-image: linear-gradient(black,rgba(0, 179, 255, 0.136));
+}
+
+.mclaren-765 video{
+    width: 90vw;
+    padding: 1rem;
+}
+
+.mclaren-765 hr{
+    margin: 0rem 40rem;
+    opacity: 0%;
+    background-color: rgb(0, 179, 255);
+    color: rgb(0, 179, 255);
+    border:0.5px solid rgb(0, 179, 255);
+    box-shadow: 0 0 1rem rgb(0, 179, 255);
+    transition: 0.2s all ease;
+    animation-name: tube;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tube {
+    0%{
+        box-shadow: 0 0 1rem rgb(0, 179, 255);
+    }
+    25%{
+        box-shadow: 0 0 0rem rgb(0, 179, 255);
+    }
+    50%{
+        box-shadow: 0 0 1rem rgb(0, 179, 255);
+    }
+    75%{
+        box-shadow: 0 0 0.5rem rgb(0, 179, 255);
+    }
+    100%{
+        box-shadow: 0 0 1rem rgb(0, 179, 255);
+    }
+}
+
+.mclaren-765:hover hr{
+    opacity: 100%;
+    margin: 0rem 1.5rem;
+}
+
+.mclaren-765 h1{
+    font-weight: 100;
+    font-size: 2rem;
+    padding: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.mclaren-765 h1 span{
+    color: rgb(0, 179, 255);
+    text-shadow: 0 0 0.5rem rgb(0, 179, 255);
+}
+
+.mclaren-765 p span{
+    text-shadow: 0 0 0.5rem rgb(0, 179, 255);
+    color: rgb(0, 179, 255);
+}
+
+.mclaren-765 p{
+    padding: 1rem;
+}
+
+.mclaren-765 .container div{
+    background-color: rgba(0, 179, 255, 0.119);
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.mclaren-765 button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 3rem;
+    margin:3rem 0rem 3rem 0rem;
+    opacity: 100%;
+    transition: 0.2s all ease;
+}
+
+.mclaren-765 button:hover{
+    border: 1px solid rgb(0, 179, 255);
+}
+
+.mclaren-765 button span{
+    text-shadow: 0 0 0.5rem rgb(0, 179, 255);
+    color: rgb(0, 179, 255);
+}
+
+.mclaren-765 h1::after{
+    position: absolute;
+    content: " ";
+    height: 1.5px;
+    width: 0%;
+    bottom: 0px;
+    background-color: rgb(0, 179, 255);
+    transform: translateX(-50%);
+    left: 50%;
+    transition: 0.2s all ease;
+}
+.mclaren-765:hover h1::after{
+    width: 100%;
+}
+
+.maclaren-grid .container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.maclaren-grid .container img{
+    display: block;
+    width: 100%;
+    opacity: 100%;
+    transition: 0.2s all ease;
+    transform: scale(100%);
+}
+
+.maclaren-grid .container div{
+    overflow: hidden;
+}
+.maclaren-grid .container div:hover img{
+    transform: scale(110%);
+    opacity: 60%;
+}
+.maclaren-grid .container div{
+    position: relative;
+}
+
+.maclaren-grid .container div .grid-content{
+    position: absolute;
+    bottom: 0px;
+    font-size: 0.7rem;
+    padding: 0rem 1rem;
+    border-left: 10px solid aqua;
+    margin: 1rem;
+}
+.maclaren-grid .container div .grid-content h1{
+    transform: translateY(50%);
+    transition: 0.2s all ease;
+}
+
+.maclaren-grid .container div:hover .grid-content h1{
+    transform: translateY(0%);
+}
+
+.maclaren-grid .container div .grid-content p{
+    opacity: 0%;
+    transition: 0.2s all ease;
+}
+
+.maclaren-grid .container div:hover .grid-content p{
+    opacity: 100%;
+}
+
+.maclaren-grid{
+    background-image: linear-gradient(0deg,black 0%,rgba(0, 179, 255, 0.136) 100%);
+    overflow: hidden;
+}
+
+@media (max-width:700px) {
+    .maclaren-grid .container{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+}
+
+.header-mclaren-grid h1{
+    text-align: center;
+    padding: 3rem;
+    font-weight: 100;
+}
+
+.header-mclaren-grid img{
+    width: 150px;
+}
+
+.header-mclaren-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.normalhr{
+    margin: 0rem 3rem;
+    background-color: rgba(0, 179, 255, 0.136);;
+}
+
+.mclaren-footer{
+    background-image: linear-gradient(
+        45deg,
+        rgb(36, 36, 36),
+        rgb(0, 0, 0)
+    )
+    ;
+    text-align: center;
+    padding: 3rem;
+    font-size: 0.94rem;
+    font-weight: 100;
+}
+
+.buy{
+    overflow: hidden;
+}
+
+footer img{
+    width: 150px;
+}
+
+.footer-grid{
+    background-image: linear-gradient(45deg,rgb(30, 30, 30),black);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem;
+    gap:2rem;
+}
+
+.first{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight:bolder;
+}
+
+.mclaren-policy{
+    margin-top: 4rem;
+}
+
+.first-part{
+    margin-bottom: 3rem;
+}
+
+.first-part p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.second-part p{
+    margin-bottom: 2rem;
+}
+
+
+.footer-grid ul li a{
+    opacity: 50%;
+    padding: 0.5rem;
+}
+
+.footer-grid ul li{
+    padding: 0.5rem;
+}
+
+
+.footer-grid ul li a:hover{
+    opacity: 80%;
+}
+
+
+.contact{
+    background-image: linear-gradient(90deg,rgb(30, 30, 30),black);
+    padding: 3rem;
+}
+
+body::-webkit-scrollbar{
+    width: 0.7em;
+    height: 0em;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: rgb(29, 29, 29);
+
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    box-shadow: 0 0 2rem aqua;
+    border: 2px solid  rgb(29, 29, 29);
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(0, 161, 161);
+}
