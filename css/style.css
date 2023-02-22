@@ -13,6 +13,7 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 55px;
 }
 body{
     /* background-color: rgb(13, 13, 13); */
